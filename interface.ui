@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Projeto Copiar</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>copiar.ico</normaloff>copiar.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="horizontalLayoutWidget">
@@ -23,9 +27,9 @@
       <height>51</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,3">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,3">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="textDirA">
        <property name="font">
         <font>
          <family>Times New Roman</family>
@@ -40,7 +44,14 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QPushButton" name="botaoDirA">
+       <property name="text">
+        <string>Selecionar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="caminhoDirA">
        <property name="accessibleDescription">
         <string>kjkhjk</string>
        </property>
@@ -59,7 +70,7 @@
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="1" column="1">
-      <widget class="QPlainTextEdit" name="plainTextEdit">
+      <widget class="QPlainTextEdit" name="listaDirB">
        <property name="font">
         <font>
          <pointsize>10</pointsize>
@@ -71,7 +82,7 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QPlainTextEdit" name="plainTextEdit_2">
+      <widget class="QPlainTextEdit" name="listaDirA">
        <property name="font">
         <font>
          <pointsize>10</pointsize>
@@ -83,7 +94,7 @@
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="textListaDirA">
        <property name="font">
         <font>
          <weight>75</weight>
@@ -96,7 +107,7 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLabel" name="label_3">
+      <widget class="QLabel" name="textListaDirB">
        <property name="font">
         <font>
          <weight>75</weight>

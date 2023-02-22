@@ -5,4 +5,4 @@ cd C:\Users\Suporte\AppData\Local\Programs\Python\Python311-32
 
 cd scripts
 
-pyuic5 -x "C:\Users\Suporte\Desktop\Packs Importantes\Projetos\Copiar-Python\interface.ui" -o "C:\Users\Suporte\Desktop\Packs Importantes\Projetos\Copiar-Python\interface.py"
+pyuic5 -x "C:\Users\Suporte\Desktop\Packs Importantes\Projetos\Projeto_Copiar" -o "C:\Users\Suporte\Desktop\Packs Importantes\Projetos\Projeto_Copiar\interface.py"
