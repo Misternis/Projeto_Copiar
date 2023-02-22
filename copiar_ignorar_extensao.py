@@ -2,9 +2,11 @@ import os
 import shutil
 import hashlib
 import time
+import dotenv
+dotenv.load_dotenv(dotenv.find_dotenv())
 
-original_dir = 'C:\\siAuditor\\AudWhatsApp'
-backup_dir = 'C:\\Users\\Suporte\\Desktop\\teste'
+original_dir = os.environ.get("original_dir")
+backup_dir = os.environ.get("backup_dir")
 
 # The file extension to ignore
 ignore_extension = '.ini'

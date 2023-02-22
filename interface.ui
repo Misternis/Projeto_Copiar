@@ -55,6 +55,12 @@
        <property name="accessibleDescription">
         <string>kjkhjk</string>
        </property>
+       <property name="placeholderText">
+        <string>Coloque o caminho da pasta aqui.</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
     </layout>
