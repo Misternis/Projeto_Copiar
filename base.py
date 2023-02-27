@@ -20,14 +20,14 @@ class Tela(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.botaoDirA.clicked.connect(self.caminhoDirA)
-        self.ui.caminhoDirA
+        self.ui.listaDirA.setPlainText(str(lista_arquivos.listarDiretorio))
 
     @QtCore.pyqtSlot()
     def caminhoDirA(self):
         #QFileDialog.getOpenFileName(self,"Selecionar Arquivo")
         direotiroA = QFileDialog.getExistingDirectory(self, str("Selecionar Pasta"),"/home",QFileDialog.ShowDirsOnly | QFileDialog.DontResolveSymlinks)
-        print("Retorno de Log, Diretorio A lido")
-        print("Esté e o caminho lido:", direotiroA)
+        print("Retorno de Log, Diretorio 'A' foi lido")
+        print("Caminho de diretorio lido:", direotiroA)
         return direotiroA
 
 
