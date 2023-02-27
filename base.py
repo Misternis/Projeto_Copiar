@@ -20,7 +20,7 @@ class Tela(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.botaoDirA.clicked.connect(self.caminhoDirA)
-        self.ui.listaDirA.setPlainText(str(lista_arquivos.listarDiretorio))
+        self.ui.listaDirA.setPlainText(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))
 
     @QtCore.pyqtSlot()
     def caminhoDirA(self):
