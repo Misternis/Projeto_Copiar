@@ -20,7 +20,10 @@ class Tela(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.botaoDirA.clicked.connect(self.caminhoDirA)
-        self.ui.listaDirA.setPlainText(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))
+        self.ui.listView.setPlainText(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))
+        #lista = ('Carlos \n Vinicios \n Bumbum de Nenem')
+        #self.ui.listaDirA.setPlainText(lista)
+    
 
     @QtCore.pyqtSlot()
     def caminhoDirA(self):

@@ -1,8 +1,0 @@
-
-COMANDO CONVERTER AQUIVO .UI EM .PY
-
-cd C:\Users\Suporte\AppData\Local\Programs\Python\Python311-32
-
-cd scripts
-
-pyuic5 -x "C:\Users\Suporte\Desktop\Packs Importantes\Projetos\Projeto_Copiar" -o "C:\Users\Suporte\Desktop\Packs Importantes\Projetos\Projeto_Copiar\interface.py"
