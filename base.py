@@ -1,6 +1,6 @@
 import os
 import sys
-from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog
+from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QTableWidget, QTableWidgetItem
 from PyQt5 import QtCore
 from interface import *
 import lista_arquivos
@@ -20,9 +20,17 @@ class Tela(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.botaoDirA.clicked.connect(self.caminhoDirA)
-        self.ui.listaDirA.setPlainText(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))               # Adiciona a String na lista A
-        self.ui.listWidget.addItem(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))                   # Adiciona a String na lista B    
-
+        #self.ui.tableWidgetA.setPlainText(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))               # Adiciona a String na lista A
+        #self.ui.tableWidgetA.addItem(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))                   # Adiciona a String na lista B    
+        lista = ['Carro', 'Vinicios', 'Bumbum de Nenem', 'igoroi']
+        for i in lista:
+            item_name = QTableWidgetItem(i)
+            item_data = QTableWidgetItem('data')
+            item_tamanho = QTableWidgetItem('tamanho')
+            self.ui.tableWidgetA.setItem(lista.index(i),0,item_name)
+            self.ui.tableWidgetA.setItem(lista.index(i),1,item_data)
+            self.ui.tableWidgetA.setItem(lista.index(i),2,item_tamanho)
+            
 
     @QtCore.pyqtSlot()
     def caminhoDirA(self):

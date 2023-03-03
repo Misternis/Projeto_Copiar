@@ -75,18 +75,6 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="0">
-      <widget class="QPlainTextEdit" name="listaDirA">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="readOnly">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="0">
       <widget class="QLabel" name="textListaDirA">
        <property name="font">
@@ -113,8 +101,55 @@
        </property>
       </widget>
      </item>
+     <item row="1" column="0">
+      <widget class="QTableWidget" name="tableWidgetA">
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>113</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Nome</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Data</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tamanho</string>
+        </property>
+       </column>
+      </widget>
+     </item>
      <item row="1" column="1">
-      <widget class="QListWidget" name="listWidget"/>
+      <widget class="QTableWidget" name="tableWidgetB">
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>113</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Nome</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Data</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tamanho</string>
+        </property>
+       </column>
+      </widget>
      </item>
     </layout>
    </widget>
