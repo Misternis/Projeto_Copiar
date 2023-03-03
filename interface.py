@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\viniv\Dropbox\Projetos Dev\Projeto_Copiar\interface.ui'
+# Form implementation generated from reading ui file 'C:\Users\Suporte\Desktop\Packs Importantes\Projetos\Projeto_Copiar\interface.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -16,7 +16,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(727, 567)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("C:\\Users\\viniv\\Dropbox\\Projetos Dev\\Projeto_Copiar\\copiar.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("C:\\Users\\Suporte\\Desktop\\Packs Importantes\\Projetos\\Projeto_Copiar\\copiar.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -49,13 +49,6 @@ class Ui_MainWindow(object):
         self.gridLayout = QtWidgets.QGridLayout(self.horizontalLayoutWidget_2)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.gridLayout.setObjectName("gridLayout")
-        self.listaDirB = QtWidgets.QPlainTextEdit(self.horizontalLayoutWidget_2)
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.listaDirB.setFont(font)
-        self.listaDirB.setReadOnly(True)
-        self.listaDirB.setObjectName("listaDirB")
-        self.gridLayout.addWidget(self.listaDirB, 1, 1, 1, 1)
         self.listaDirA = QtWidgets.QPlainTextEdit(self.horizontalLayoutWidget_2)
         font = QtGui.QFont()
         font.setPointSize(10)
@@ -77,9 +70,9 @@ class Ui_MainWindow(object):
         self.textListaDirB.setFont(font)
         self.textListaDirB.setObjectName("textListaDirB")
         self.gridLayout.addWidget(self.textListaDirB, 0, 1, 1, 1)
-        self.listView = QtWidgets.QListView(self.centralwidget)
-        self.listView.setGeometry(QtCore.QRect(140, 70, 256, 192))
-        self.listView.setObjectName("listView")
+        self.listWidget = QtWidgets.QListWidget(self.horizontalLayoutWidget_2)
+        self.listWidget.setObjectName("listWidget")
+        self.gridLayout.addWidget(self.listWidget, 1, 1, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 727, 21))

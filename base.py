@@ -14,13 +14,15 @@ diretorio = lista_arquivos.listarDiretorio(caminho_dir=original_dir)
 diretorio = lista_arquivos.listarDiretorio(caminho_dir=backup_dir)
 
 
+
 class Tela(QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.botaoDirA.clicked.connect(self.caminhoDirA)
-        self.ui.listaDirA.setPlainText(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))
+        self.ui.listaDirA.setPlainText(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))               # Adiciona a String na lista A
+        self.ui.listWidget.addItem(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))                   # Adiciona a String na lista B
         #lista = ('Carlos \n Vinicios \n Bumbum de Nenem')
         #self.ui.listaDirA.setPlainText(lista)
     
