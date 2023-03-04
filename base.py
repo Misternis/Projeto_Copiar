@@ -23,6 +23,7 @@ class Tela(QMainWindow):
         #self.ui.tableWidgetA.setPlainText(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))               # Adiciona a String na lista A
         #self.ui.tableWidgetA.addItem(str(lista_arquivos.listarDiretorio(caminho_dir=original_dir)))                   # Adiciona a String na lista B    
         lista = ['Carro', 'Vinicios', 'Bumbum de Nenem', 'igoroi']
+        self.ui.tableWidgetA.setRowCount(len(lista))
         for i in lista:
             item_name = QTableWidgetItem(i)
             item_data = QTableWidgetItem('data')
@@ -30,6 +31,13 @@ class Tela(QMainWindow):
             self.ui.tableWidgetA.setItem(lista.index(i),0,item_name)
             self.ui.tableWidgetA.setItem(lista.index(i),1,item_data)
             self.ui.tableWidgetA.setItem(lista.index(i),2,item_tamanho)
+        #result = {'nome':['Vinicios'], 'data': ['05/06/1994'], 'tamanho':['igoroi']}
+        #self.ui.tableWidgetA.clearContents()
+        #self.ui.tableWidgetA.setRowCount(len(result))
+        #for row, text in enumerate(result):
+        #    for column, data in enumerate(text):
+        #        self.ui.tableWidgetA.setItem(row, column, QTableWidgetItem(str(data)))
+
             
 
     @QtCore.pyqtSlot()
