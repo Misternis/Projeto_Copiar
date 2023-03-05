@@ -18,141 +18,127 @@
     <normaloff>copiar.ico</normaloff>copiar.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>701</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,3">
-     <item>
-      <widget class="QLabel" name="textDirA">
-       <property name="font">
-        <font>
-         <family>Times New Roman</family>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Caminho Arquivo:</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="botaoDirA">
-       <property name="text">
-        <string>Selecionar</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="caminhoDirA">
-       <property name="accessibleDescription">
-        <string>kjkhjk</string>
-       </property>
-       <property name="placeholderText">
-        <string>Coloque o caminho da pasta aqui.</string>
-       </property>
-       <property name="clearButtonEnabled">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>19</x>
-      <y>79</y>
-      <width>691</width>
-      <height>441</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="textListaDirA">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>DIRETORIO A</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="textListaDirB">
-       <property name="font">
-        <font>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>DIRETORIO B</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QTableWidget" name="tableWidgetA">
-       <attribute name="horizontalHeaderCascadingSectionResizes">
-        <bool>true</bool>
-       </attribute>
-       <attribute name="horizontalHeaderDefaultSectionSize">
-        <number>113</number>
-       </attribute>
-       <column>
-        <property name="text">
-         <string>Nome</string>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,3">
+      <item>
+       <widget class="QLabel" name="textDirA">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
-       </column>
-       <column>
         <property name="text">
-         <string>Data</string>
+         <string>Caminho Arquivo:</string>
         </property>
-       </column>
-       <column>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="botaoDirA">
         <property name="text">
-         <string>Tamanho</string>
+         <string>Selecionar</string>
         </property>
-       </column>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QTableWidget" name="tableWidgetB">
-       <attribute name="horizontalHeaderCascadingSectionResizes">
-        <bool>true</bool>
-       </attribute>
-       <attribute name="horizontalHeaderDefaultSectionSize">
-        <number>113</number>
-       </attribute>
-       <column>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="caminhoDirA">
+        <property name="accessibleDescription">
+         <string>kjkhjk</string>
+        </property>
+        <property name="placeholderText">
+         <string>Coloque o caminho da pasta aqui.</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="textListaDirA">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
-         <string>Nome</string>
+         <string>DIRETORIO A</string>
         </property>
-       </column>
-       <column>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="textListaDirB">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
-         <string>Data</string>
+         <string>DIRETORIO B</string>
         </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Tamanho</string>
-        </property>
-       </column>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTableWidget" name="tableWidgetA">
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>113</number>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Tamanho</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTableWidget" name="tableWidgetB">
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>113</number>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Tamanho</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
