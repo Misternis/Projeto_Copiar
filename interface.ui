@@ -60,20 +60,6 @@
     </item>
     <item row="1" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="1" column="0">
-       <widget class="QLabel" name="textListaDirA">
-        <property name="font">
-         <font>
-          <family>Times New Roman</family>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>DIRETORIO ORIGEM</string>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="1">
        <widget class="QLabel" name="textListaDirB">
         <property name="font">
@@ -85,6 +71,20 @@
         </property>
         <property name="text">
          <string>DIRETORIO DESTINO</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="textListaDirA">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>DIRETORIO ORIGEM</string>
         </property>
        </widget>
       </item>
@@ -177,6 +177,13 @@
        </spacer>
       </item>
      </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="transfButton">
+      <property name="text">
+       <string>Transferir</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

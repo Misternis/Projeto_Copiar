@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\Suporte\Desktop\Packs Importantes\Projetos\Projeto_Copiar\interface.ui'
+# Form implementation generated from reading ui file 'C:\Users\viniv\Dropbox\Projetos Dev\Projeto_Copiar\interface.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -44,14 +44,6 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addLayout(self.horizontalLayout, 0, 0, 1, 1)
         self.gridLayout = QtWidgets.QGridLayout()
         self.gridLayout.setObjectName("gridLayout")
-        self.textListaDirA = QtWidgets.QLabel(self.centralwidget)
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setBold(True)
-        font.setWeight(75)
-        self.textListaDirA.setFont(font)
-        self.textListaDirA.setObjectName("textListaDirA")
-        self.gridLayout.addWidget(self.textListaDirA, 1, 0, 1, 1)
         self.textListaDirB = QtWidgets.QLabel(self.centralwidget)
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -60,6 +52,14 @@ class Ui_MainWindow(object):
         self.textListaDirB.setFont(font)
         self.textListaDirB.setObjectName("textListaDirB")
         self.gridLayout.addWidget(self.textListaDirB, 1, 1, 1, 1)
+        self.textListaDirA = QtWidgets.QLabel(self.centralwidget)
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setBold(True)
+        font.setWeight(75)
+        self.textListaDirA.setFont(font)
+        self.textListaDirA.setObjectName("textListaDirA")
+        self.gridLayout.addWidget(self.textListaDirA, 1, 0, 1, 1)
         self.tableWidgetA = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidgetA.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
         self.tableWidgetA.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
@@ -95,6 +95,9 @@ class Ui_MainWindow(object):
         spacerItem1 = QtWidgets.QSpacerItem(40, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout.addItem(spacerItem1, 0, 1, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout, 1, 0, 1, 1)
+        self.transfButton = QtWidgets.QPushButton(self.centralwidget)
+        self.transfButton.setObjectName("transfButton")
+        self.gridLayout_2.addWidget(self.transfButton, 2, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 727, 21))
@@ -117,8 +120,8 @@ class Ui_MainWindow(object):
         self.botaoDirA.setText(_translate("MainWindow", "Selecionar"))
         self.caminhoDirA.setAccessibleDescription(_translate("MainWindow", "kjkhjk"))
         self.caminhoDirA.setPlaceholderText(_translate("MainWindow", "Coloque o caminho da pasta aqui."))
-        self.textListaDirA.setText(_translate("MainWindow", "DIRETORIO ORIGEM"))
         self.textListaDirB.setText(_translate("MainWindow", "DIRETORIO DESTINO"))
+        self.textListaDirA.setText(_translate("MainWindow", "DIRETORIO ORIGEM"))
         item = self.tableWidgetA.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Nome"))
         item = self.tableWidgetA.horizontalHeaderItem(1)
@@ -131,6 +134,7 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "Data"))
         item = self.tableWidgetB.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "Tamanho"))
+        self.transfButton.setText(_translate("MainWindow", "Transferir"))
         self.menuArquivo.setTitle(_translate("MainWindow", "Arquivo"))
 
 
